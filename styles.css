@@ -1,0 +1,88 @@
+/* Global styles */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    ;
+}
+
+.container {
+    padding: 5px 10px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* End global styles */
+
+/* Menu styling. */
+
+#menu ul {
+    list-style-type: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    background-color: rgb(107, 107, 107);
+}
+
+#menu li.current {
+    background-color: rgb(107, 107, 107);
+}
+
+/* End menu styling. */
+
+/* Card styling */
+
+.img-card {
+    margin: 20px auto auto auto;
+    width: 20%;
+}
+
+.text-card {
+    margin: 20px auto auto auto;
+    width: 60%;
+}
+
+.card-header {
+    margin: 10px;
+    text-align: center;
+}
+
+.citation:link {
+    text-decoration: none;
+}
+
+div[class$='-card'] {
+    box-shadow: 0 5px 7px 0 gray;
+    transition: 0.3s;
+}
+
+/* This selector matches any class that ends with '-card'
+   so that it will apply to both image and text cards. */
+div[class$='-card']:hover {
+    box-shadow: 0 10px 14px 0 gray;
+}
+
+/* End card styling */
